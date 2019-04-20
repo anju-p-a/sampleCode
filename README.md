@@ -1,2 +1,3 @@
 # sampleCode
-Tells how to use IBM Watson's speech to text service
+A list of sample codes for learning and reference
+  1. How to use IBM watson Text to seech api
