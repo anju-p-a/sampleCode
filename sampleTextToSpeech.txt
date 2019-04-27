@@ -1,0 +1,12 @@
+curl -X GET -u "apikey:myKey" \
+--output hola_mundo.wav \
+"myURL/v1/synthesize?accept=audio%2Fwav&text=hola%20mundo&voice=es-ES_EnriqueVoice"
+
+// change the voice ,text,outputfile based on the requirement;
+//use the post method,for more secure text's use as follows
+
+curl -X POST -u "apikey:myKey" \
+--header "Content-Type: application/json" \
+--data "{\"text\":\"hello world\"}" \
+--output hello_world.ogg \
+"myURL/v1/synthesize/voice=es-ES_EnriqueVoice"
